@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adversaire</title>
+    <link rel="stylesheet" type="text/css" href="./advStyle.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between py-3 margePricpl header">
+        <div class="d-flex align-items-center logo">
+            <img src="Logo/logo1.png" class="px-2">
+            <img src="Logo/logo2.png" class="px-2">
+            <img src="Logo/logo3.png" class="px-2">
+        </div>
+        <div class="hide">
+            <ul class="nav d-flex justify-content-end" id="menu" style="display: block;">
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="NO WAY HOME/home1.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="adversaire.html">Adversaire</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="#">Héros</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="#">A propos</a></li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center gap-1 d-sm-none dotContainer" onclick="openNav()" style="cursor: pointer;" onclick="menu()">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <!-- RESPONSIVE -->
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="#" class="closebtn" onclick="closeNav()">×</a>
+            <ul class="nav d-flex justify-content-end" id="menu" style="display: block;">
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="home.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="adversaire.html">Adversaire</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="#">Héros</a></li>
+                <li class="nav-item"><a class="nav-link text-white font font-weight-bolder mx-3" href="#">A propos</a></li>
+            </ul>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "190px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+    </header>
+    <section class="sec1 marge">
+        <h1 class="text-white">SUPER VILAINS</h1>
+        <h3 class="text-white font-weight-bold" style="font-size: 20px">Ce n'est jamais blanc ou noir,méchant ou gentil !</h3>
+    </section>
+    <section class="sec2">
+        <div class="container d-flex flex-wrap justify-content-around" style="padding-top: 8%">
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img8.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Dennis Carredine</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Inspiré du Cambrioleur<br>
+                        <strong>Capacités:</strong> Humain sans caractéristique particulière.<br>
+                        <strong>Objectif:</strong> Mi-temps entre escroc et voleur de voiture à New-York, il est en partie responsable, avec Flint Marco, de la mort de Ben Parker lors d'un braquage à main armé qui a mal tourné. C'est le premier adversaire
+                        de Ben Parker qui l'amènera à devenir Spiderman
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img9.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Bouffon vert</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Norman Osborn<br>
+                        <strong>Capacités:</strong> Fondateur de Oscorp Technologies, Serum Super Soldat, Planeur/Equipements de hautes technologies.<br>
+                        <strong>Objectif:</strong> Souffrant d'une dissociation de personnalité après l'injection du serum, il ne cherche que le chaos et la mort de Spiderman. La personnalité de Norman reste présente, mais dominée par le bouffon.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img10.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Dr. Octopus</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Otto Octavius<br>
+                        <strong>Capacités:</strong> Chercheur à Oscorp Technologies, Tentacules mécanique contrôlés par puce neuronale.<br>
+                        <strong>Objectif:</strong>Suite à un accident lors d'une expérience, sa femme meurt et son équipement prend le contrôle de son esprit le rendant plus violent. Pensant que Spiderman en est l'origine, il Souhaite le voir mort.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img11.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Homme-sable</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Flint-Marco<br>
+                        <strong>Capacités:</strong> Change son copr en sable, Contrôle individuellement les molécules de sable.<br>
+                        <strong>Objectif:</strong> Sauver sa fille atteint de maladie grave est son unique préoccupation, même après son accident l'ayant changé en homme-sable. Par manque d'argent, il devient criminel malgré lui et enchaine les mauvaises
+                        décisions.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img12.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Bouffon Vert II</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Harry Osborn<br>
+                        <strong>Capacités:</strong> Dirigenat de Oscorp Technologies, Serum Suoer Soldat II, Planeur/Equipements de hautes technologies.<br>
+                        <strong>Objectif:</strong> Meilleur ami de Peter. Souffrant d'une dissociation de personnalité après l'injection du serum (comme son père), il ne cherche que la mort de Spidermant, tenu reponsable de la mort de son père.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img13.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Venom</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Symbiote | Eddie Brock<br>
+                        <strong>Capacités:</strong> Force surhumaine, Matérialiser des armes/objets, Résistance importante<br>
+                        <strong>Objectif:</strong> Extraterrestre se liant à un journaliste d'investigation, il est l'anti Héro par excellence. A la fois térrifiant et violent, mais animé par le sentiment de justice d'Eddie, mieux vaut ne pas en faire
+                        son ennemi.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img14.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Lézard</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Dr. Curtis Connorsr<br>
+                        <strong>Capacités:</strong> Chercheur Oscorp Technologies, Force surhumaine et Aptitudes reptiliennes.<br>
+                        <strong>Objectif:</strong> Animé par le désir de sauvé les maux du corp humain, il développe un sérum à partir d'ADN de lézard. Ce premier essai devait faire repousser son bras amputé, mais il se transdforme entièrement en lézard.
+                        Son souhait, étendre cette évolution.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img15.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Electro</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Maxwell Dillon<br>
+                        <strong>Capacités:</strong> Ingénieur Oscorp Technologies, Manipulation et stockage de l'électricité<br>
+                        <strong>Objectif:</strong> Une expérience à Oscorp tourne mal et transforme son corp en condensateur capable de manipuler l'électricité. Fan obsessionnel de Spiderman, son pouvoir le change en adversiare rempli de colère et cherchant
+                        la défaite de son idole.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img16.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Rhino</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Alekseo Sytsevich<br>
+                        <strong>Capacités:</strong> Costume mécanique en forme de Rhinocéros puissant.<br>
+                        <strong>Objectif:</strong> Mafieux russe qui a détourné un camion blindé d'Oscorp contenant des fioles de plutonium, mais désarmé et vaincu par Spiderman. Il est ensuite recruté par Harry Osborn, premier membre d'une nouvelle équie
+                        créée pour combattre Spider-Man et faire des ravages.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img17.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Vautour</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Adrian Toomes<br>
+                        <strong>Capacités:</strong> Costume mécanique de vautour, armes extraterrestre.<br>
+                        <strong>Objectif:</strong> Il se convertit en marchand d'armes extraterrestre suite à la faillite de son entreprise. Père de famille fortuné le jour, voleur d'armes extraterrestre la nuit, il mène une double vie. Spiderman se mettant
+                        en travers de son business, il souhaite la mort du justicier.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-3" id="card" style="width: 320px">
+                <img src="Illustration/img18.png">
+                <div class="card-body sec2 font" id="bordure">
+                    <h3 class="card-title text-center">Mysterio</h3>
+                    <p class="card-text">
+                        <strong>Identité :</strong> Quentin Beck<br>
+                        <strong>Capacités:</strong> Intelligent, Costume hautes technologies, Drones.<br>
+                        <strong>Objectif:</strong> Ancien employé de Stark Industries il cherche à remplacer Iron Man et devenir un symbole de justice. Pour cela, il orchestre des attaques en utilisant des illusions et une technologie avancé. SPiderman
+                        découvrant son plan, il devient un adversaire à la hauteur du héro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="div1">
+            <a href="#">Mobile app</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Cookies</a>
+            <div class="hide-respo">
+                <img src="Logo/logo1.png" class="img1">
+                <img src="Logo/logo2.png" class="img2">
+                <img src="Logo/logo3.png" class="img3">
+            </div>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <select style="background-color:#f1c530;outline: none;padding: 5px;border-radius: 10px">
+				<optgroup><option value="saab" style="outline: none;">Langue</option></optgroup>
+			</select>
+        </div>
+        <div class="show-respo">
+            <img src="Logo/logo1.png" class="img1">
+            <img src="Logo/logo2.png" class="img2">
+            <img src="Logo/logo3.png" class="img3">
+        </div>
+        <div class="div2">
+            <a href="#"><img src="Logo/logof.png"></a>
+            <a href="#"><img src="Logo/logoi.png"></a>
+            <a href="#"><img src="Logo/logoy.png"></a>
+            <a href="#"><img src="Logo/logot.png"></a>
+        </div>
+        <p>© SaynaXMarvel. lnc. 2022. We love ours users!</p>
+    </footer>
+</body>
+
+</html>

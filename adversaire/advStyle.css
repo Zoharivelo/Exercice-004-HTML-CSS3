@@ -1,0 +1,230 @@
+@font-face {
+    font-family: zo;
+    src: url(./Far-From\ Homecoming.otf);
+}
+
+h1 {
+    font-family: zo;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: #f1c530;
+}
+
+.margePricpl {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.marge {
+    padding: 20%;
+    padding-left: 10%;
+}
+
+#bordure {
+    border: solid 10px #30270a;
+    border-top: 0;
+    border-radius: 45px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#card {
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border: none;
+}
+
+.font {
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../Font/Montserrat.ttf);
+}
+
+
+/************************************/
+
+.sec1 {
+    background-image: url(./Illustration/img7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec2 {
+    background-color: #f1c530;
+}
+
+
+/**********FOOTER*************/
+
+footer {
+    background-color: #000;
+}
+
+footer .div1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 10% 5%;
+    align-items: center;
+}
+
+footer .show-respo,
+footer .show-respo img {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+footer .div1 a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+}
+
+footer .div1 div {
+    display: flex;
+    align-items: center;
+}
+
+footer .div1 div img {
+    margin: 5px
+}
+
+footer .div2 {
+    display: flex;
+    justify-content: center;
+}
+
+footer .div2 a {
+    width: 40px;
+    height: 40px;
+    background-color: #f1c530;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 30px 30px 50px;
+    font-size: 14px;
+    color: white;
+    opacity: .7
+}
+
+@media (max-width: 900px) {
+    footer .hide,
+    footer .hide-respo img {
+        width: 0;
+        height: 0;
+    }
+    footer .div1 {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .div1 select {
+        margin-left: 80%;
+        position: relative;
+        top: -60px;
+    }
+    footer .div1 a {
+        margin: 1%;
+    }
+    footer .show-respo,
+    footer .show-respo img {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+}
+
+
+/******************RESPONSIVE HEADER**************************/
+
+.dotContainer {
+    height: 30px;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f1c530;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -5px 5px 8px black;
+    border-radius: 0 0 0 10px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    header .hide {
+        display: none;
+    }
+    header .logo {
+        padding-top: 5%;
+    }
+    .dotContainer {
+        margin-right: 10px;
+    }
+    .header {
+        background: none;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+    .sec1 {
+        background-size: 100% 100%;
+    }
+}
