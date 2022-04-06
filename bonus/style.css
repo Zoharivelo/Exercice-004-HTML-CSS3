@@ -1,0 +1,95 @@
+@font-face {
+    font-family: zo;
+    src: url(./Far-From\ Homecoming\ Updated.otf);
+}
+
+h1 {
+    font-family: zo;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #B11313;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header1 {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.imagelogo {
+    margin-left: 30px;
+}
+
+.header2 {
+    display: flex;
+    margin-right: 40px;
+}
+
+.lien {
+    margin-right: 80px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.heros {
+    background-image: url(./Illustration/img35.png);
+    padding: 200px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 190px;
+    background-position-y: -170px;
+}
+
+footer {
+    background-color: #000000;
+    padding-bottom: 40px;
+}
+
+.fin1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 80px;
+}
+
+.lien1 {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.langue {
+    background-color: #B11313;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin-top: 26px;
+    border-style: none;
+    color: #FFFFFF;
+}
+
+.imagelogo1 {
+    margin-left: 10px;
+}
+
+.logo2 {
+    display: flex;
+    margin-left: 600px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.logo3 {
+    margin-right: 10px;
+}
